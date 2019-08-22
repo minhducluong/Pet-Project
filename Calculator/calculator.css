@@ -7,7 +7,20 @@ body {
 	margin: 0;
 }
 
-.intro {
+body::before {
+	background-image: url('https://previews.123rf.com/images/olenayepifanova/olenayepifanova1802/olenayepifanova180200011/96076031-seamless-vector-sketch-background-retro-illustration-wallpaper-backdrop-texture-pattern-template-for.jpg');
+	background-size: cover;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+}
+
+.guide {
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
@@ -43,6 +56,7 @@ a:active {
 	animation-fill-mode: forwards;
 	font-size: 40px;
 	margin-left: 15px;
+	margin-right: 15px;
 }
 
 @keyframes fadeInUp {
@@ -102,8 +116,21 @@ a:active {
 	}
 }
 
-@media (max-height: 600px) {
+@media (max-height: 600px) and (orientation:landscape) {
 	body {
 		justify-content: unset;
+	}
+	.guide {
+		right: 10px;
+	}
+}
+@media (max-width: 576px) {
+	.wrapper {
+		font-size: 25px;
+	}
+}
+@media (max-width: 576px) and (orientation:portrait) {
+	.guide {
+		right: unset;
 	}
 }

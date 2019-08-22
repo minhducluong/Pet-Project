@@ -172,11 +172,18 @@ let deviceWidth = $(window).width();
 let deviceHeight = $(window).height();
 
 if (deviceWidth < deviceHeight) {
-	$wrapper.css('width', '100vw');
+
+	if (deviceWidth < 576) {
+		$wrapper.css('max-height', 'unset');
+		$wrapper.css('max-width', 'unset');
+	}
+
+	$wrapper.css('width', '100%');
 	let w = $wrapper.width();
 	$wrapper.height(1.2 * w);
 } else {
-	$wrapper.css('height', 'calc(100vh - 30px)');
+	$wrapper.css('height', 'calc(100% - 30px)');
+
 	if (deviceHeight < 600) $wrapper.css('max-height', deviceHeight);
 	let h = $wrapper.height();
 	$wrapper.width(h / 1.2);
