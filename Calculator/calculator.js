@@ -167,7 +167,7 @@ $(document).on('keydown', function(event) {
 	}
 });
 
-// ====================== Handle responsive problem
+// ====================== Handle responsive problem (fixed ration 1/1.2)
 let deviceWidth = $(window).width();
 let deviceHeight = $(window).height();
 
