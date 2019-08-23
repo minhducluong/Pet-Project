@@ -39,7 +39,7 @@ input[type='image'] {
 	margin: auto;
 }
 input[type='text'], input[type='email'] {
-	height: 20px;
+	height: 22px;
 	width: 200px;
 	border-radius: 5px;
 	border: 2px solid #bdbdbd;
@@ -87,6 +87,9 @@ li {
 }
 @media (max-width: 360px) {
 	#fs1 input {
-		width: calc(100% - 105px);
+		width: calc(100% - 100px);
+	}
+	.invalid, .ok {
+		padding-left: 100px;
 	}
 }
