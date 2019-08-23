@@ -19,7 +19,7 @@ legend {
 	border-radius: 5px;
 }
 textarea {
-	width: 95%;
+	width: 100%;
 	height: 50px;
 	border-radius: 5px;
 	border: 2px solid #bdbdbd;
@@ -48,6 +48,10 @@ input[type='text'], input[type='email'] {
 .submit {
 	margin-top: -1rem;
 	text-align: center;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
 }
 li {
 	padding: 5px 0;
@@ -81,12 +85,7 @@ li {
 		display: none;
 	}
 }
-@media (max-width: 568px) {
-	ol {
-		padding-left: 10px;
-	}
-}
-@media (max-width: 320px) {
+@media (max-width: 360px) {
 	#fs1 input {
 		width: calc(100% - 105px);
 	}
