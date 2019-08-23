@@ -121,9 +121,26 @@ a:active {
 		display: none;
 	}
 }
-
 @media (max-width: 576px) {
 	.wrapper {
 		font-size: 25px;
+	}
+}
+@media (orientation: landscape) {
+	.wrapper {
+		height: calc(100vh - 30px);
+		width: calc((100vh - 30px) / 1.2);
+	}
+}
+@media (max-height: 600px) and (orientation: landscape) {
+	.wrapper {
+		max-height: 100%;
+		width: calc((100vh - 30px) / 1.2);
+	}
+}
+@media (orientation: portrait) {
+	.wrapper {
+		width: 100%;
+		height: calc(1.2 * 100vw);
 	}
 }
