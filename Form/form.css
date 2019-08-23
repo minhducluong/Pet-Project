@@ -18,6 +18,9 @@ legend {
 	text-transform: uppercase;
 	border-radius: 5px;
 }
+input[type='radio'] {
+	transform: translateY(2px);
+}
 textarea {
 	width: 100%;
 	height: 50px;
