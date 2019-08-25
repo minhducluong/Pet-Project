@@ -106,6 +106,7 @@ th.normal::after {
 
 td {
 	text-align: center;
+	text-transform: capitalize;
 }
 
 tr:nth-child(odd) {

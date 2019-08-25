@@ -75,31 +75,37 @@ $(function() {
 			$('#no_result').text('');
 			$('th').attr('class', 'normal');
 		}
-	});
 
-	$(document).on('keypress', function(event) {		
-		if (event.key == 'Enter') { //User ấn Enter mới bắt đầu search
-			results = [];
-			$('th').attr('class', 'normal');
+		results = [];
+		$('th').attr('class', 'normal');
 
-			let input = $('[type="search"]').val().trim().toLowerCase();
-			if (input == '') renderContent(films);
-			else {
-				films.forEach( function(element, index) {
-					for (let prop in element) {
-						//Nếu data có chứa input
-						if (element[prop].toLowerCase().indexOf(input) != -1) {
-							results.push(element);
-							break; //prop nào chứa input thì push element (object) của prop đó vào array results, sau đó BREAK luôn để thoát khỏi element hiện tại, tiếp tục với element tiếp theo
-						}
+		let input = $('[type="search"]').val().trim().toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');;
+		let re = new RegExp(input, 'g'); // make RegExp to search in global (để search những thứ lặp lại nhiều lần)
+
+		if (input == '') renderContent(films);
+		else {
+			films.forEach( function(film, index) {
+				for (let key in film) {
+					//Nếu data có chứa input
+					if (film[key].toLowerCase().indexOf(input) != -1) {
+						results.push(film);
+						break; //Với mỗi film, value của key nào chứa input thì push film đó vào array results, sau đó BREAK luôn để thoát khỏi film hiện tại, tiếp tục với film tiếp theo
 					}
-				});
+				}
+			});
+			
+			// Thông báo No results
+			if (!results[0]) $('#no_result').text(`No results`);
+			else $('#no_result').text(``);
 
-				if (!results[0]) $('#no_result').text(`No results`);
-				else $('#no_result').text(``);
-				renderContent(results);
-			}
-			console.log(results);
+			renderContent(results);
+			
+			//Highlight search results
+			$('td').each(function(index, el) {
+				$(this).html($(this).html().toLowerCase().replace(re, `<mark>$&</mark>`));
+			});
 		}
+		// console.log(results);
 	});
+
 });
