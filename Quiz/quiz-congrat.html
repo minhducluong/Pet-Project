@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Congrats</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			overflow: hidden;
+			font-size: 35px;
+		}
+		iframe {
+			height: 100vh;
+		}
+		div {
+			color: white;
+			animation: 8s fadeInUp;
+			position: absolute;
+			top: 45%;
+			left: 20%;
+			right: 20%;
+			text-align: center;
+			opacity: 0;
+			background-color: rgb(0, 0, 0, 0.5);
+			padding: 10px;
+		}
+
+		@keyframes fadeInUp {
+			0% {
+				opacity: 0;
+				-webkit-transform: translate3d(0, 100%, 0);
+				transform: translate3d(0, 100%, 0);
+			}
+
+			80% {
+				opacity: 1;
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+
+			100% {
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<iframe width="100%" height="100%" src="https://www.youtube.com/embed/pXYHCzswwbg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<div>CHÚC MỪNG BẠN <br>ĐÃ TRẢ LỜI ĐÚNG HẾT CÁC CÂU HỎI</div>
+</body>
+</html>
