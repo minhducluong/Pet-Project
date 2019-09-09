@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+}
+
+img {
+	max-height: 100%;
+}
+
+.progress {
+	height: 5px;
+	width: 100%;
+  transform: translateY(32px);
+	background-color: white;
+	border-radius: 999px;
+	transition: width 30s linear;
+}
+
+.start {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #914d36;
+  cursor: pointer;
+  background-color: rgb(255,255,255,0.5);
+  color: #914d36;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadeIn 1s 2.8s;
+  opacity: 0;
+  z-index: 1;
+  animation-fill-mode: forwards;
+}
+
+.start:hover {
+  background-color: #a54322e8;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.background {
+	position: absolute;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+}
+
+.win {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.win h1 {
+	width: 500px;
+	height: 150px;
+	line-height: 150px;
+	margin: 0;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+	display: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+  padding-top: 50px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.scene {
+  width: 160px;
+  height: 232px;
+  margin: 30px 20px;
+  perspective: 600px;
+  visibility: hidden;
+  animation: rollIn 0.5s 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  background-color: unset;
+}
+
+.card:hover {
+	box-shadow: 0px 0px 16px 0px rgba(50, 50, 50, 1);
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+  box-shadow: 0px 0px 16px 0px rgba(50, 50, 50, 1);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card__face--front {
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+  background-color: beige;
+}
+
+.scene.c1 {
+	animation-delay: 0.6s;
+}
+.scene.c2 {
+	animation-delay: 0.8s;
+}
+.scene.c3 {
+	animation-delay: 1.0s;
+}
+.scene.c4 {
+	animation-delay: 1.2s;
+}
+.scene.c5 {
+	animation-delay: 1.4s;
+}
+.scene.c6 {
+	animation-delay: 1.6s;
+}
+.scene.c7 {
+	animation-delay: 1.8s;
+}
+.scene.c8 {
+	animation-delay: 2.0s;
+}
+.scene.c9 {
+	animation-delay: 2.2s;
+}
+.scene.c10 {
+	animation-delay: 2.4s;
+}
+.scene.c11 {
+	animation-delay: 2.6s;
+}
