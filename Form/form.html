@@ -11,7 +11,27 @@
 	<form novalidate>
 		<fieldset id="fs1">
 			<legend>Thông tin cá nhân</legend>
-			<p>
+			<div class="grid-container">
+				<div class="grid-item title"><label for="name" class="label-title">Họ tên:</label></div>
+				<div class="grid-item">
+					<input id="name" type="text" name="name" placeholder="Nguyễn Văn A" data-type="name" autofocus>
+					<span class="invalid"><i class="fas fa-exclamation-triangle"></i> Họ tên không hợp lệ</span>
+					<span class="ok"><i class="fas fa-check-circle"></i></span>
+				</div>
+				<div class="grid-item title"><label for="phone" class="label-title">Số điện thoại:</label></div>
+				<div class="grid-item">
+					<input id="phone" type="text" name="phone" placeholder="090123456" data-type="phone">
+					<span class="invalid"><i class="fas fa-exclamation-triangle"></i> Số điện thoại tối thiểu 9 chữ số</span>
+					<span class="ok"><i class="fas fa-check-circle"></i></span>
+				</div>
+				<div class="grid-item title"><label for="email" class="label-title">Email:</label></div>
+				<div class="grid-item">
+					<input id="email" type="email" name="email" placeholder="example@gmail.com" data-type="email">
+					<span class="invalid"><i class="fas fa-exclamation-triangle"></i> Email không hợp lệ</span>
+					<span class="ok"><i class="fas fa-check-circle"></i></span>	
+				</div>
+			</div>
+<!-- 			<p>
 				<label for="name" class="title">Họ tên:</label>
 				<input id="name" type="text" name="name" placeholder="Nguyễn Văn A" data-type="name" autofocus>
 				<span class="invalid"><i class="fas fa-exclamation-triangle"></i> Họ tên không hợp lệ</span>
@@ -28,7 +48,7 @@
 				<input id="email" type="email" name="email" placeholder="example@gmail.com" data-type="email">
 				<span class="invalid"><i class="fas fa-exclamation-triangle"></i> Email không hợp lệ</span>
 				<span class="ok"><i class="fas fa-check-circle"></i></span>	
-			</p>
+			</p> -->
 		</fieldset>
 		<fieldset>
 			<legend>Đánh giá giảng viên</legend>
