@@ -1,1 +1,1 @@
-# [Preview Quiz](https://raw.githack.com/minhducluong/Pet-Project/master/Quiz/quiz.html)
+# [Preview Quiz](https://minhducluong.github.io/Pet-Project/Quiz/)
