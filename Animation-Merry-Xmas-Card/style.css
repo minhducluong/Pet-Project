@@ -7,19 +7,21 @@ body {
 }
 
 #audio {
+	margin-top: 10px;
 	float: right;
 }
 
 #hint {
 	text-align: center;
-	margin-top: 0;
+	margin-top: 10px;
 	margin-bottom: 0;
 }
 
 div.main-wrap {
+	margin-top: 10px;
 	width: 100vw;
-	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
