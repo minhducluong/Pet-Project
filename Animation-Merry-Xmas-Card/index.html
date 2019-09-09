@@ -8,7 +8,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 </head>
 <body>
-	<iframe src="music.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
 	<div class="main-wrap">
 		<label>
 		<input type="checkbox"  />
@@ -46,5 +45,11 @@
 		</div>
 		</label>
 	</div>
+	<p id="hint">Turn the card over to read content!</p>
+	<audio id="audio" controls autoplay loop>
+	  <source src="music.ogg" type="audio/ogg">
+	  <source src="music.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
 </body>
 </html>
