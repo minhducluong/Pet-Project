@@ -1,1 +1,1 @@
-# [Preview Calculator](https://raw.githack.com/minhducluong/Pet-Project/master/Calculator/calculator.html)
+# [Preview Calculator](https://minhducluong.github.io/Pet-Project/Calculator/)
