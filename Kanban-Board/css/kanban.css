@@ -127,9 +127,3 @@ textarea:focus {
 		margin-right: 15px;
 	}
 }
-
-@media (max-width: 360px) {
-	.ui-state-default input {
-		max-width: 100px;
-	}	
-}
