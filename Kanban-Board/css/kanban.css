@@ -58,7 +58,7 @@ h3:hover {
 
 .ui-state-default input {
 	border: 0;
-	max-width: 100px;
+	max-width: 190px;
 }
 
 .ui-state-default input:focus {
@@ -126,4 +126,10 @@ textarea:focus {
 	.card {
 		margin-right: 15px;
 	}
+}
+
+@media (max-width: 360px) {
+	.ui-state-default input {
+		max-width: 100px;
+	}	
 }
