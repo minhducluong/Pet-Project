@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Kanban Board</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/kanban.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 title position-relative">
+				<h3 contenteditable class="d-inline-block text-dark">Business Launch</h3>
+			</div>
+			
+		</div>
+		
+		<div class="d-flex justify-content-between align-items-start flex-nowrap" style="overflow-x: auto;">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title mb-0">To Do</h5>
+					<ul id="sortable1" class="card-text list-unstyled connectedSortable mb-0">
+						<li class="ui-state-default">
+							<span>Hire Accountant</span>
+							<i class="fas fa-trash-alt"></i>
+							<i class="fas fa-edit"></i>
+						</li>
+						<li class="ui-state-default">
+							<span>Apply for Loan</span>
+							<i class="fas fa-trash-alt"></i>
+							<i class="fas fa-edit"></i>
+						</li>
+					</ul>
+					<div class="add">
+						<i class="fas fa-plus"></i>
+						<span class="add-text ml-1">Add another card</span>
+					</div>
+					<div class="new-input">
+						<textarea placeholder="Enter a title for this card..." class="w-100"></textarea>
+						<div>
+							<button type="button" class="add-card btn btn-success mr-2">Add Card</button>
+							<i class="fas fa-times fa-lg"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title mb-0">Doing</h5>
+					<ul id="sortable2" class="card-text list-unstyled connectedSortable mb-0">
+						<li class="ui-state-default">
+							<span>Create Facebook Fanpage</span>
+							<i class="fas fa-trash-alt"></i>
+							<i class="fas fa-edit"></i>
+						</li>
+						<li class="ui-state-default">
+							<span>Build Website</span>
+							<i class="fas fa-trash-alt"></i>
+							<i class="fas fa-edit"></i>
+						</li>
+						<li class="ui-state-default">
+							<span>Design Logo</span>
+							<i class="fas fa-trash-alt"></i>
+							<i class="fas fa-edit"></i>
+						</li>
+						<li class="ui-state-default">
+							<span>Sign Office Lease</span>
+							<i class="fas fa-trash-alt"></i>
+							<i class="fas fa-edit"></i>
+						</li>
+					</ul>
+					<div class="add">
+						<i class="fas fa-plus"></i>
+						<span class="add-text ml-1">Add another card</span>
+					</div>
+					<div class="new-input">
+						<textarea placeholder="Enter a title for this card..." class="w-100"></textarea>
+						<div>
+							<button type="button" class="add-card btn btn-success mr-2">Add Card</button>
+							<i class="fas fa-times fa-lg"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title mb-0">Done</h5>
+					<ul id="sortable3" class="card-text list-unstyled connectedSortable mb-0">
+						<li class="ui-state-default">
+							<span>Open Bank Account</span>
+							<i class="fas fa-trash-alt"></i>
+							<i class="fas fa-edit"></i>
+						</li>
+						<li class="ui-state-default">
+							<span>Write Business Plan</span>
+							<i class="fas fa-trash-alt"></i>
+							<i class="fas fa-edit"></i>
+						</li>
+					</ul>
+					<div class="add">
+						<i class="fas fa-plus"></i>
+						<span class="add-text ml-1">Add another card</span>
+					</div>
+					<div class="new-input">
+						<textarea placeholder="Enter a title for this card..." class="w-100"></textarea>
+						<div>
+							<button type="button" class="add-card btn btn-success mr-2">Add Card</button>
+							<i class="fas fa-times fa-lg"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/c2224d8649.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<!-- jQuery UI -->
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<!-- JS -->
+	<script type="text/javascript" src="js/kanban.js"></script>
+</body>
+</html>

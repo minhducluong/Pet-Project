@@ -1,0 +1,130 @@
+body {
+	overflow-x: scroll;
+	height: 100vh;
+	background: rgb(34,193,195);
+	background: linear-gradient(87deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 2px 5px;
+}
+
+h3:hover {
+	background-color: #00000029;
+}
+
+.card {
+	background-color: transparent;
+	min-width: 300px;
+	border: none;
+	margin-bottom: 20px;
+}
+
+.card-body {
+	background-color: #dfe1e6;
+	border-radius: 3px;
+}
+
+.card-text {
+	padding: 25px 0 5px;
+}
+
+.ui-state-default {
+	background-color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 7px 5px;
+	margin-bottom: 0.5rem;
+	cursor: grab;
+	box-shadow: 0 1px 0 rgba(9,30,66,.25);
+}
+
+.ui-state-default:active {
+	cursor: grabbing;
+}
+
+.ui-state-default span {
+	line-height: 26px;
+}
+
+.ui-state-default input {
+	border: 0;
+}
+
+.ui-state-default input:focus {
+	outline: none;
+	
+}
+
+.ui-state-default:hover {
+	background-color: #f4f4f4;
+}
+
+.add {
+	color: #6b778c;
+	cursor: pointer;
+}
+
+.add:hover .add-text {
+	text-decoration: underline;
+}
+
+.ui-state-default:hover .fa-trash-alt, .ui-state-default:hover .fa-edit {
+	display: inline;
+}
+
+.fas.fa-trash-alt, .fas.fa-edit {
+	float: right;
+	line-height: 24px;
+	display: none;
+	padding: 0 7px;
+	cursor: pointer;
+}
+
+.ui-state-highlight {
+	height: 38px; 
+	line-height: 26px;
+	background: linear-gradient(87deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	margin-bottom: 0.5rem;
+	border-radius: 4px;
+	padding: 7px 5px;
+}
+
+.new-input {
+	display: none;
+	cursor: pointer;
+}
+
+textarea {
+	border-radius: 4px;
+	padding: 7px 5px;
+	margin-bottom: 0.5rem;
+	border: 1px solid #c5c5c5;
+	resize: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.fas.fa-times {
+	color: #6b778c;
+}
+
+ul span {
+	display: inline-block;
+	max-width: 190px;
+}
+
+@media (max-width: 1023px) {
+	.card {
+		margin-right: 15px;
+	}
+}
