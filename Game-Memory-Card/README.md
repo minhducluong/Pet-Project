@@ -1,1 +1,1 @@
-# [Preview Game Memory Card](https://raw.githack.com/minhducluong/Pet-Project/master/Game-Memory-Card/memory-card.html)
+# [Preview Game Memory Card](https://minhducluong.github.io/Pet-Project/Game-Memory-Card/)
