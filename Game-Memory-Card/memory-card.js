@@ -64,15 +64,8 @@ $(function() {
 		// Fadeout button Start
 		$(this).fadeOut('fast');
 
-		let progressWidth = $('.progress').width();
-
-		// Time-bar chuyển màu xanh, width giảm dần về 0
-		$('.progress').css('background-color', '#4CAF50').width(0);
-
-		// Nếu còn dưới 1/4 thời gian thì time-bar chuyển màu đỏ
-		$(document).on('mousemove', function() {
-			if ($('.progress').width() < progressWidth/4) $('.progress').css('background-color', 'red');
-		});
+		// Time-bar starts to run
+		$('.progress').css('animation', 'run 30s linear');
 
 		// Thời gian là 30s
 		let time = 30;
@@ -160,7 +153,7 @@ $(function() {
 						clearInterval(countdown);
 
 						// Ngừng chạy time-bar
-						$('.progress').width($('.progress').width());
+						$('.progress').css('animation-play-state', 'paused');
 					}
 				}, 600);
 			}

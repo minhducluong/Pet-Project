@@ -12,7 +12,27 @@ img {
   transform: translateY(32px);
 	background-color: white;
 	border-radius: 999px;
-	transition: width 30s linear;
+
+}
+
+@keyframes run {
+  0% {
+    width: 100%;
+    background: #4CAF50;
+  }
+
+  50% {
+    background: #4CAF50;
+  }
+
+  75% {
+    background: red;
+  }
+
+  100% {
+    width: 0%;
+    background: red;
+  }
 }
 
 .start {
