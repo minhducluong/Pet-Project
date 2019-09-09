@@ -52,10 +52,13 @@ h3:hover {
 
 .ui-state-default span {
 	line-height: 26px;
+	display: inline-block;
+	max-width: 190px;
 }
 
 .ui-state-default input {
 	border: 0;
+	max-width: 190px;
 }
 
 .ui-state-default input:focus {
@@ -118,10 +121,6 @@ textarea:focus {
 	color: #6b778c;
 }
 
-ul span {
-	display: inline-block;
-	max-width: 190px;
-}
 
 @media (max-width: 1023px) {
 	.card {
